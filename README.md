@@ -1,9 +1,4 @@
 
-Here you go — updated with Student Name: Sahil MK.
-You can copy this directly as your README.md:
-
-
----
 
 📘 Network Simulation Lab – GNS3
 
