@@ -1,158 +1,144 @@
-Here is a clean, professional **README.md** you can directly upload to GitHub for your GNS3 topology project.
-I tailored it based on your screenshots, ping tests, and VPCS configuration steps.
+
+Here you go — updated with Student Name: Sahil MK.
+You can copy this directly as your README.md:
+
 
 ---
 
-# 🖧 GNS3 LAN Topology Project
+📘 Network Simulation Lab – GNS3
 
-This project contains a simple **Local Area Network (LAN)** simulation built using **GNS3**.
-It demonstrates how multiple PCs connected through a switch can communicate with each other using basic **IP addressing** and **ICMP (ping)** verification.
+Course: Introduction to Cybersecurity
+Institution: Marian College Kuttikanam (ICTAK Paatshala)
+Topic: Getting Started with Network Simulations using GNS3 (Beginner – No Routers)
+Student: Sahil MK
+Date: 17/11/2025
 
----
-
-## 📌 **Project Overview**
-
-The topology includes:
-
-* **4 VPCS hosts**
-
-  * PC1 – `10.1.1.1`
-  * PC2 – `10.1.1.2`
-  * PC3 – `10.1.1.3`
-  * PC4 – `10.1.1.4`
-* **1 unmanaged switch (Ethernet switch)**
-  Used to interconnect all PCs in a single broadcast domain.
-
-This setup is ideal for:
-
-* Testing basic connectivity
-* Understanding how switches forward frames
-* Observing ping/ICMP behavior
-* Practicing GNS3 topologies
 
 ---
 
-## 🧩 **Topology Diagram**
+🎯 Objective
 
-Screenshots of the topology are included in the repository:
+The goal of this lab was to learn the basics of network simulation using GNS3, create simple switch-based network topologies, test connectivity, and use GitHub for documentation and submission.
 
-* `Screenshot 1` – 2-PC test
-* `Screenshot 2` – 4-PC topology
-* `Screenshot 3` – Console outputs
-* `Screenshot 4` – Ping test results
-* `Screenshot 5` – Multi-switch test (optional)
 
 ---
 
-## ⚙️ **IP Configuration**
+🛠 Tools & Environment
 
-Each PC uses VPCS with manual IP assignment:
+Operating System: Ubuntu
 
-### **Example (PC1):**
+Software: GNS3 (GUI + Local Server)
 
-```
-ip 10.1.1.1 255.255.255.0
-```
+Devices: VPCS (Virtual PCs), Ethernet Switches
 
-### **All PCs:**
+Version Control: GitHub (Public Repository)
 
-| PC  | IP Address | Subnet Mask   |
-| --- | ---------- | ------------- |
-| PC1 | 10.1.1.1   | 255.255.255.0 |
-| PC2 | 10.1.1.2   | 255.255.255.0 |
-| PC3 | 10.1.1.3   | 255.255.255.0 |
-| PC4 | 10.1.1.4   | 255.255.255.0 |
 
-No gateway is required since all devices are on the **same network**.
 
 ---
 
-## 🖥️ **Ping Test Results**
+✅ Tasks Completed
 
-Connectivity was tested using `ping` between all PCs.
+Part A – Installation
 
-### ✔️ Successful Pings
+Installed GNS3 on Ubuntu
 
-* PC1 ↔ PC2
-* PC1 ↔ PC4
-* PC3 ↔ PC1
-* PC3 ↔ PC4
-* PC2 ↔ PC4
+Verified GNS3 Local Server status
 
-These tests confirm that the switch is forwarding frames correctly.
+Added installation screenshots
 
-### ⚠️ Observed Timeouts
 
-During experiments with additional switches, some links showed:
-
-* ICMP timeout
-* Partial packet loss
-
-This helps visualize how switching loops or mis-cabling can affect connectivity.
 
 ---
 
-## 📁 Files Included
+Part B – Network Topologies
 
-| File                     | Description                         |
-| ------------------------ | ----------------------------------- |
-| `topology-1.gns3project` | Basic 2-PC topology                 |
-| `topology-2.gns3project` | 4-PC + 1 Switch topology            |
-| `topology-3.gns3project` | Multi-switch testing topology       |
-| `/screenshots/`          | Images of the topology & ping tests |
+🔹 Topology 1 – Simple LAN
 
----
+2 PCs + 1 Switch
 
-## ▶️ How to Use
+Assigned IP addresses (same subnet)
 
-1. Install **GNS3** and **GNS3 VM**
-2. Import `.gns3project` files into GNS3
-3. Start all nodes
-4. Open each PC console
-5. Assign IP addresses
-6. Test connectivity using `ping`
+Successful ping test
 
----
 
-## 📘 **Commands Used**
+🔹 Topology 2 – Star Topology
 
-### Assign IP:
+4 PCs connected to a central switch
 
-```
-ip <address> <subnet>
-```
+Assigned IP addresses
 
-### Ping:
+All devices could communicate
 
-```
-ping <destination-ip>
-```
+
+🔹 Topology 3 – Multi-Switch Mesh
+
+3 interconnected switches
+
+1 PC per switch
+
+Same subnet for all PCs
+
+Full end-to-end connectivity verified
+
+
 
 ---
 
-## 🎯 Learning Outcomes
+Part C – Project Export
 
-Through this project, you will understand:
+Exported all topologies as Portable Projects (.zip)
 
-* Basic LAN design
-* Switch behavior (Layer 2 forwarding)
-* IP addressing within a subnet
-* Connectivity troubleshooting
-* GNS3 project workflow
+(File → Export → Portable Project)
+
+
 
 ---
 
-## 📬 Contact / Support
+Part D – GitHub Submission
 
-If you have questions, contributions, or improvements, feel free to open an issue or pull request on the repository.
+Repository created:
+NetworkSimLab-YourName
+
+Included in the repo:
+
+Exported project .zip files
+
+Screenshots of:
+
+GNS3 installation
+
+Network topologies
+
+Ping test results
+
+
+Summary report (this file)
+
+
 
 ---
 
-If you want, I can also generate:
+📚 Learning Outcomes
 
-✅ A professional **GitHub description**
-✅ A **short version of README**
-✅ A **nice banner / badge section**
-✅ Auto-formatted markdown with emojis
+After completing this lab, I am able to:
 
-Just tell me!
+Install and configure GNS3 on Ubuntu
+
+Build LAN, Star, and Mesh topologies
+
+Assign IP addresses and verify connectivity using ping
+
+Export GNS3 projects
+
+Use GitHub for documentation and submission
+
+
+
+---
+
+🏁 Conclusion
+
+This lab provided hands-on experience with GNS3 and helped reinforce the fundamentals of switching, IP addressing, connectivity testing, and documentation. Using GitHub added a professional workflow element suitable for industry practices.
+
+
